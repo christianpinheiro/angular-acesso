@@ -21,8 +21,5 @@
 
 <div *ngIf="authService.user | async">
   Logado como <b>{{(authService.user | async)?.email}}</b> |
-  <button>(click)="Logout()">"Sair"</button>
-  <div>
-
-  </div>
+  <button (click)="logout()">Sair</button>
 </div>
