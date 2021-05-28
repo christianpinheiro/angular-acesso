@@ -7,6 +7,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
   imports:      [ 
@@ -25,6 +26,7 @@ import { HelloComponent } from './hello.component';
     AngularFireAuthModule
   ],
   declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [AuthService]
 })
 export class AppModule { }
