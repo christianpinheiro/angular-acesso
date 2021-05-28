@@ -1,1 +1,16 @@
 <h1>{{name}}</h1>
+
+<div>
+  <form>
+    <fieldset>
+      <legend>Login</legend>
+      <div> Email </div>
+      <input type="text" [(ngModel)] = "email"/>
+      <div> Senha </div>
+      <input type="password" [(ngModel)] = "password"/>
+      <hr/>
+      <button (click)="loginWithEmail()">Entrar com Email</button> | 
+      <button (click)="loginWithGoogle()">Entrar com Google</button> 
+    </fieldset>
+  </form>
+</div>
