@@ -6,10 +6,10 @@
 <div *ngIf="!(authService.user | async)">
   <form>
     <fieldset>
-      <legend>Login</legend>
-      <div> Email </div>
+      <legend class="legend">Login</legend><br>
+      <div class="div"> Email </div>
       <input type="text" name="email" [(ngModel)] = "email"/>
-      <div> Senha </div>
+      <div class="div"> Senha </div>
       <input type="password" name="password" [(ngModel)] = "password"/>
       <hr/>
       <button class="button"(click)="loginWithEmail()">Entrar com Email</button>  
