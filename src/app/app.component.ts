@@ -16,6 +16,7 @@ export class AppComponent  {
 
   loginWithEmail(){
     this.authService.loginWithEmail(this.email, this.password);
+    this.email = this.password = "";
   }
   loginWithGoogle(){
     this.authService.loginWithGoogle();
