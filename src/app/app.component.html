@@ -1,4 +1,7 @@
-<h1>{{name}}</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1>{{name}} <i class="fa fa-lock" style="font-size:px"></i></h1>
+
 
 <div *ngIf="!(authService.user | async)">
   <form>
@@ -9,8 +12,8 @@
       <div> Senha </div>
       <input type="password" name="password" [(ngModel)] = "password"/>
       <hr/>
-      <button (click)="loginWithEmail()">Entrar com Email</button> | 
-      <button (click)="loginWithGoogle()">Entrar com Google</button> 
+      <button class="button"(click)="loginWithEmail()">Entrar com Email</button>  
+      <button class="button button2" (click)="loginWithGoogle()">Entrar com Google</button> 
     </fieldset>
   </form>
 </div>

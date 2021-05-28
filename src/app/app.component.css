@@ -1,3 +1,14 @@
-p {
-  font-family: Lato;
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
+.button2 {background-color: #4CAF50;}
+
