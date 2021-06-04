@@ -23,7 +23,7 @@ import { AuthService } from './auth.service';
         appId: "1:961970735176:web:fab9493c21aa3e20dcb07d"
       }
     ),
-    AngularFireAuthModule
+    AngularFireAuthModule,
     ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ],
