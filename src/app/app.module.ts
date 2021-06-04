@@ -33,7 +33,7 @@ import { RouterModule } from '@angular/router';
     ),
     AngularFireAuthModule,
     AngularFireDatabaseModule
-  ],
+    ],
   declarations: [ AppComponent, HelloComponent, IndexComponent, FirelistComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService]
