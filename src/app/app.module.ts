@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule} from '@angular/fire/database';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -28,7 +29,8 @@ import { RouterModule } from '@angular/router';
       messagingSenderId: '961970735176',
       appId: '1:961970735176:web:fab9493c21aa3e20dcb07d'
     }),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   declarations: [AppComponent, HelloComponent, IndexComponent, FirelistComponent],
   bootstrap: [AppComponent],
