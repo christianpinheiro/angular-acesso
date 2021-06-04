@@ -8,11 +8,18 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { AuthService } from './auth.service';
+import { IndexComponent } from './index/index.component';
+import { FirelistComponent } from './firelist/firelist.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    RouterModule.forRoot([
+      {path: '', component: IndexComponent},
+      {path: 'firelist', component: FirelistComponent}
+    ]),
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyBZrfPb7VF--tPth13bPbZ1wTZ_30RXr20',
       authDomain: 'angularcontroleacesso.firebaseapp.com',
@@ -23,7 +30,7 @@ import { AuthService } from './auth.service';
     }),
     AngularFireAuthModule
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, HelloComponent, IndexComponent, FirelistComponent],
   bootstrap: [AppComponent],
   providers: [AuthService]
 })
