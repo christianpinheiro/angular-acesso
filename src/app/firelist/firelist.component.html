@@ -1,13 +1,13 @@
 <h2>Lista do FireBase</h2>
 <hr/>
 <input [(ngModel)]='text'/>
-<button>Adicionar</button>
+<button (click)="addItem()">Adicionar</button>
 <hr/>
 <table>
-  <tr>
-    <td title="Chave: husdahudsahud">teste 1</td>
+  <tr *ngFor="let item of list | async">
+    <td [title]="['chave: '+item.key]">{{item.text}}</td>
     <td>
-      <button>Remover</button>
+      <button (click)="deleteItem(item.key)">Remover</button>
     </td>
   </tr>
 </table>
