@@ -21,4 +21,11 @@ export class FirelistComponent implements OnInit {
   ngOnInit() {
   }
 
+  addItem(){
+    this.listRef.push(
+      {
+        text: this.text
+      }
+    );
+  }
 }
