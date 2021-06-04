@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
-import { Observable } from 'rxjs/dist/types';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-firelist',
